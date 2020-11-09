@@ -1,0 +1,43 @@
+﻿@model GizmoWebClient.Models.TotalModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <tr>
+        <th>Products</th>
+    </tr>
+    @foreach (var item in Model.Products)
+    {
+        <tr>
+            <td>@item.Name</td>
+        </tr>
+    }
+</table>
+
+<table class="table">
+    <tr>
+        <th>Gizmos</th>
+    </tr>
+    @foreach (var item in Model.Gizmos)
+    {
+        <tr>
+            <td>@item.Name</td>
+        </tr>
+    }
+</table>
+
+<table class="table">
+    <tr>
+        <th>Widgets</th>
+    </tr>
+    @foreach (var item in Model.Widgets)
+    {
+        <tr>
+            <td>@item.Name</td>
+        </tr>
+    }
+</table>
